@@ -11,6 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/*Route::get('hallo', function () {
+    return "Hallo, Anda sedang mengikuti ebook panduan Laravel
+    Fundamental";
+    });*/
+//Route::get('profil', 'CobaController@profil');
+//Route::get('index', 'MainController@index');
+//Route::get('biodata', 'BiodataController@index');
+
+/* templating system for view*/
+Route::get('/index', 'IndexController@home');
+Route::get('/index/contact', 'IndexController@contact');
+Route::get('/index/about', 'IndexController@about');
